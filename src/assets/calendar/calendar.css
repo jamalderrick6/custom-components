@@ -1,0 +1,103 @@
+.custom-calendar {
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .custom-calendar .day {
+    position: relative;
+    width: calc(100% / 7);
+    height: 34px;
+    display: inline-block;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .custom-calendar .day div {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    color: #0a2540;
+    z-index: 100;
+    line-height: 34px;
+  }
+
+  .custom-calendar .day div:hover {
+    background-color: #f00;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50%;
+  }
+
+  .custom-calendar .day div.selected {
+    background-color: #f00;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50%;
+  }
+
+  .custom-calendar .day div.before {
+    color: rgba(10, 37, 64, 0.4);
+    border-radius: 50%;
+    font-weight: 600;
+  }
+  
+  
+  .custom-calendar .day div.today {
+    background-color: rgba(10, 37, 64, 0.4);
+    border-radius: 50%;
+    font-weight: 600;
+  }
+
+  .custom-calendar .header {
+    background-color: rgba(10, 37, 64, 0.7);
+    text-align: center;
+    padding: 0 5px;
+    min-height: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+  }
+
+  .custom-calendar .body {
+    border-top: 1px solid rgba(10, 37, 64, 0.1);
+    border-bottom: 1px solid rgba(10, 37, 64, 0.1);
+  }
+
+  .custom-calendar .header .previous {
+    flex: 1;
+    text-align: left;
+    margin-left: 1rem;
+  }
+  
+  .custom-calendar .header .next {
+    flex: 1;
+    text-align: right;
+    margin-right: 1rem;
+  }
+
+  .custom-calendar .day-names {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .custom-calendar .week {
+    background-color: white;
+    width: calc(100% / 7);
+    height: 34px;
+    line-height: 34px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #0a2540;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  
